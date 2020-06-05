@@ -1,0 +1,20 @@
+  <table class="table mt-5" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" >
+    <thead class="thead-light">
+      <tr>
+        <th>Post ID</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Body</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of comments">
+        <td>{{ x.postId }}</td>
+        <td>{{ x.id }}</td>
+        <td>{{ x.name }}</td>
+        <td>{{ x.email }}</td>
+        <td>{{ x.body }}</td>
+      </tr>
+    </tbody>
+  </table>      
